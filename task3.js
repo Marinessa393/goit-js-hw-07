@@ -16,6 +16,8 @@ const images = [
   },
 ];
 
+// version 1
+
 // const imageRef = document.querySelector("#gallery");
 // imageRef.style.display = "flex";
 // imageRef.style.justifyContent = "space-between";
@@ -37,6 +39,8 @@ const images = [
 
 // imageRef.append(...elems);
 // console.log(imageRef);
+
+// version 2
 
 const imgRef = document.getElementById("gallery");
 imgRef.style.display = "flex";

@@ -1,5 +1,4 @@
 const fieldRef = document.getElementById("validation-input");
-console.dir(fieldRef);
 
 const validValue = fieldRef.dataset.length;
 fieldRef.addEventListener("blur", (event) => {
