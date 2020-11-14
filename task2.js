@@ -1,10 +1,10 @@
 const ingredients = [
-  "Картошка",
-  "Грибы",
-  "Чеснок",
-  "Помидоры",
+  "Картопля",
+  "Гриби",
+  "Часник",
+  "Помідори",
   "Зелень",
-  "Приправы",
+  "Приправи",
 ];
 
 const IngredientsRef = document.querySelector("#ingredients");
