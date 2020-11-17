@@ -7,14 +7,14 @@ const ingredients = [
   "Приправи",
 ];
 
-const IngredientsRef = document.querySelector("#ingredients");
+const ingredientsRef = document.querySelector("#ingredients");
 
 const elems = ingredients.map((el) => {
-  const Ing = document.createElement("li");
-  Ing.innerHTML = el;
+  const ing = document.createElement("li");
+  ing.innerHTML = el;
 
-  return Ing;
+  return ing;
 });
 
-IngredientsRef.append(...elems);
-console.log(IngredientsRef);
+ingredientsRef.append(...elems);
+console.log(ingredientsRef);

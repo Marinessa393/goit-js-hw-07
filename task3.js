@@ -16,13 +16,19 @@ const images = [
   },
 ];
 
+// version 3
+const imgRef = document.querySelector("#gallery");
+imgRef.setAttribute("class", "sizing");
+const createGallery = ({ url, alt }) => {
+  return `<li><img src="${url}" alt="${alt}" width="300" height="150"></li>`;
+};
+const build = images.map(createGallery).join("");
+
+imgRef.insertAdjacentHTML("beforeend", build);
+
 // version 1
 
 // const imageRef = document.querySelector("#gallery");
-// imageRef.style.display = "flex";
-// imageRef.style.justifyContent = "space-between";
-// imageRef.style.alignItems = "center";
-// imageRef.style.listStyleType = "none";
 
 // const elems = images.map((el) => {
 //   const imgItem = document.createElement("li");
@@ -42,13 +48,13 @@ const images = [
 
 // version 2
 
-const imgRef = document.getElementById("gallery");
-imgRef.style.display = "flex";
-imgRef.style.justifyContent = "space-between";
-imgRef.style.alignItems = "center";
-imgRef.style.listStyleType = "none";
+// const imgRef = document.getElementById("gallery");
+// imgRef.style.display = "flex";
+// imgRef.style.justifyContent = "space-between";
+// imgRef.style.alignItems = "center";
+// imgRef.style.listStyleType = "none";
 
-images.map((el) => {
-  const imgEl = `<li><img src="${el.url}" alt="${el.alt}" width="300"></li>`;
-  imgRef.insertAdjacentHTML("beforeEnd", imgEl);
-});
+// images.map((el) => {
+//   const imgEl = `<li><img src="${el.url}" alt="${el.alt}" width="300"></li>`;
+//   imgRef.insertAdjacentHTML("beforeEnd", imgEl);
+// });
